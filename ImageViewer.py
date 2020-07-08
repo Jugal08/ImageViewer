@@ -8,7 +8,7 @@ root.title('Image Viewer By Jugal')
 
 
 
-#The images from the Directory 
+#The images
 my_image1=ImageTk.PhotoImage(Image.open('/home/jugal/PythonPrograms/Photos/RickSanchez1.jpg'))
 my_image2=ImageTk.PhotoImage(Image.open('/home/jugal/PythonPrograms/Photos/RickSanchez2.jpg'))
 my_image3=ImageTk.PhotoImage(Image.open('/home/jugal/PythonPrograms/Photos/RickSanchez3.jpg'))
@@ -16,7 +16,7 @@ my_image3=ImageTk.PhotoImage(Image.open('/home/jugal/PythonPrograms/Photos/RickS
 
 
 
-#Image List 
+#List of the images used 
 image_list=[my_image1,my_image2,my_image3]
 my_label=Label(image=my_image1)
 my_label.grid(row=0,column=0,columnspan=3)
