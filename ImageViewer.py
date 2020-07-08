@@ -91,6 +91,14 @@ Previous_button.grid(row=1,column=0)
 Exit_button.grid(row=1,column=1)
 
 
+#Status 
+
+Status=Label(root,text="Image 1 of "+ str(len(image_list)),bd=1,relief=SUNKEN)
+
+
+
+Status.grid(row=2,column=2,columnspan=3)
+
 
 
 root.mainloop()
