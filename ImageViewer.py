@@ -8,7 +8,7 @@ root.title('Image Viewer By Jugal')
 
 
 
-#The images from the Directory 
+#The images
 my_image1=ImageTk.PhotoImage(Image.open('/home/jugal/PythonPrograms/Photos/RickSanchez1.jpg'))
 my_image2=ImageTk.PhotoImage(Image.open('/home/jugal/PythonPrograms/Photos/RickSanchez2.jpg'))
 my_image3=ImageTk.PhotoImage(Image.open('/home/jugal/PythonPrograms/Photos/RickSanchez3.jpg'))
