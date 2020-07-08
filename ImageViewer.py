@@ -39,6 +39,18 @@ def Next(image_number):
     Previous_button=Button(root,text='<<',command=lambda : Previous(image_number-1))
     if image_number==3:
         Next_button=Button(root,text='>>',state=DISABLED)
+    
+
+    
+    #Updating the status bar 
+
+
+    Status=Label(root,text="Image " +str(image_number)+ " of "+ str(len(image_list)),bd=1,relief=SUNKEN,anchor=E)
+
+    Status.grid(row=2,column=0,columnspan=3,sticky=W+E)
+  
+    
+
 
 
 
@@ -63,6 +75,13 @@ def Previous(image_number):
     if image_number==1:
         Previous_button=Button(root,text='<<',state=DISABLED)
     
+    
+
+    #Updating the Status bar 
+    
+    Status=Label(root,text="Image " +str(image_number)+ " of "+ str(len(image_list)),bd=1,relief=SUNKEN,anchor=E)
+
+    Status.grid(row=2,column=0,columnspan=3,sticky=W+E)
 
 
     Next_button.grid(row=1,column=2)
@@ -92,12 +111,12 @@ Exit_button.grid(row=1,column=1)
 
 
 #Status 
+ 
+Status=Label(root,text="Image 1 of "+ str(len(image_list)),bd=1,relief=SUNKEN,anchor=E)
 
-Status=Label(root,text="Image 1 of "+ str(len(image_list)),bd=1,relief=SUNKEN)
 
 
-
-Status.grid(row=2,column=2,columnspan=3)
+Status.grid(row=2,column=0,columnspan=3,sticky=W+E)
 
 
 
